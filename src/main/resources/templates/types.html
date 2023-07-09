@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Types of Shows:</h1>
+<!-- how to put list of links -->
+    <h2 data-th-each="t: ${types}">
+        <a data-th-href="@{/type/{type}(type=${t})}">
+            <span data-th-text="${t}"></span>
+        </a>
+    </h2>
+</body>
+</html>
